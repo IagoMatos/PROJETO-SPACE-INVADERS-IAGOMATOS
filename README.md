@@ -157,6 +157,8 @@ Um compilador C (mingw 4.7.0).
 A biblioteca Allegro 5 (5.0.10).
 Certifique-se de que o caminho ALLEGRO_PATH no Makefile esteja configurado corretamente para o diretório de instalação do Allegro.
 
+Primeiro baixe o .zip KIT_DEV_ALLEGRO nesse diretório e extraia na sua máquina.
+
 Como Compilar:
 Este projeto inclui um Makefile para facilitar a compilação.
 
