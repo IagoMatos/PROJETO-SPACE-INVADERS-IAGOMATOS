@@ -151,10 +151,37 @@ Eventos do Allegro (teclado, display, timer) são processados dentro de cada run
 
 5. Instalação e Execução
 Pré-requisitos:
-Um compilador C (recomendado: mingw-4.7.0.)
+Um compilador C (mingw 4.7.0).
+A biblioteca Allegro 5 (5.0.10).
+Certifique-se de que o caminho ALLEGRO_PATH no Makefile esteja configurado corretamente para o diretório de instalação do Allegro.
 
+Como Compilar:
+Este projeto inclui um Makefile para facilitar a compilação.
 
-7. Assets do Jogo
+Verifique o ALLEGRO_PATH no Makefile: Abra o Makefile e certifique-se de que a linha ALLEGRO_PATH aponta para o diretório raiz da sua instalação do Allegro 5. No seu caso, o Makefile mostra:
+
+Makefile
+
+ALLEGRO_PATH = C:/Users/jvral/Downloads/KIT_DEV_ALLEGRO/allegro-5.0.10-mingw-4.7.0/allegro-5.0.10-mingw-4.7.0
+Ajuste este caminho se sua instalação do Allegro estiver em um local diferente.
+
+Compile o projeto: Abra um terminal ou prompt de comando no diretório onde o Makefile e o main.c estão localizados e execute:
+
+make
+Este comando utilizará as configurações definidas no Makefile para compilar o main.c e criar o executável jogo.exe.
+
+Como Executar:
+Após a compilação bem-sucedida, execute o binário gerado:
+
+jogo.exe
+
+Importante: Os arquivos de assets (imagens, sons, fontes) listados na função load_assets() (.png, .ogg, .ttf) devem estar na mesma pasta do executável do jogo para que ele funcione corretamente.
+
+Comandos Adicionais do Makefile:
+Limpar arquivos compilados: Para remover os arquivos .o e o executável jogo.exe, execute:
+make clean
+
+6. Assets do Jogo
 Os assets são essenciais para o funcionamento do jogo. Eles incluem:
 
 Imagens (.png):
