@@ -150,6 +150,8 @@ O loop principal na main() utiliza um switch para alternar entre os diferentes G
 Eventos do Allegro (teclado, display, timer) são processados dentro de cada run_ função.
 
 5. Instalação e Execução
+
+
 Pré-requisitos:
 Um compilador C (mingw 4.7.0).
 A biblioteca Allegro 5 (5.0.10).
